@@ -1,0 +1,27 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      let imgs = document.getElementsByTagName("img")
+
+      for (let i=0; i<imgs.length; i++){
+        let img = imgs[i]
+        let oldSource = img.src
+
+        img.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWN4/fr1fwAJRwPBz5njQAAAAABJRU5ErkJggg=="
+        img.width = 800
+        img.height = 530
+
+        let temp = new Image()
+        temp.src = oldSource
+
+        temp.onload = function(){
+          setTimeout(function(){
+            img.src = oldSource
+            img.height = img.width / (temp.width / temp.height)
+          }, 2000)
+        }
+      }
+    </script>
+  </body>
+</html>
