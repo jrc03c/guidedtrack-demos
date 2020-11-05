@@ -29,11 +29,19 @@
 
         for (let i=0; i<imgs.length; i++){
           let img = imgs[i]
-          img.height = 262
+          
+          let interval = setInterval(function(){
+            if (img.naturalHeight > 0){
+              clearInterval(interval)
+              let aspect = img.naturalWidth / img.naturalHeight
+              let width = img.parentElement.getBoundingClientRect().width
+              img.height = width / aspect
 
-          img.onload = function(){
-            img.removeAttribute("height")
-          }
+              img.onload = function(){
+                img.removeAttribute("height")
+              }
+            }
+          }, 10)
         }
       }
 
