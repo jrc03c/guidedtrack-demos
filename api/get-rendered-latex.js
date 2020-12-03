@@ -12,7 +12,7 @@ module.exports = function(request, response){
       ${katex.renderToString(request.query.latex)}
     `
   
-    return response.json({html})
+    return response.json({html: html.trim()})
   } catch(e) {
     return response.json({error: e})
   }
