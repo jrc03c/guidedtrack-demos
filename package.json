@@ -1,0 +1,23 @@
+{
+  "name": "gt-demos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrc03c/guidedtrack-demos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrc03c/guidedtrack-demos/issues"
+  },
+  "homepage": "https://github.com/jrc03c/guidedtrack-demos#readme",
+  "dependencies": {
+    "katex": "^0.12.0"
+  }
+}
