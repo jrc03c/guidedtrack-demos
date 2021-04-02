@@ -1,6 +1,8 @@
-let shouldFail = true
+let fs = require("fs")
 
 module.exports = function(request, response){
+  let shouldFail = JSON.parse(fs.readFileSync("should-fail.txt"), "utf8")
+
   if (shouldFail){
     return response.send("Failed!")
   } else {
@@ -8,4 +10,5 @@ module.exports = function(request, response){
   }
 
   shouldFail = !shouldFail
+  fs.writeFileSync("should-fail.txt", JSON.stringify(shouldFail), "utf8")
 }
