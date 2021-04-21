@@ -1,0 +1,683 @@
+*label: startLabel
+
+>> definitelyShouldHave = []
+>> probablyShouldHave = []
+>> doesntMatter = []
+>> probablyShouldNotHave = []
+>> definitelyShouldNotHave = []
+
+
+*question: How much do you value *adventure* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Adventure")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Adventure")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Adventure")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Adventure")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Adventure")
+
+*question: How much do you value *autonomy* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Autonomy")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Autonomy")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Autonomy")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Autonomy")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Autonomy")
+
+*question: How much do you value *avoiding stress* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Avoiding stress")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Avoiding stress")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Avoiding stress")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Avoiding stress")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Avoiding stress")
+
+*question: How much do you value *building things* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Building things")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Building things")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Building things")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Building things")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Building things")
+
+*question: How much do you value *camaraderie* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Camaraderie")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Camaraderie")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Camaraderie")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Camaraderie")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Camaraderie")
+
+*question: How much do you value *casual work environment* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Casual work environment")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Casual work environment")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Casual work environment")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Casual work environment")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Casual work environment")
+
+*question: How much do you value *challenge* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Challenge")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Challenge")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Challenge")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Challenge")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Challenge")
+
+*question: How much do you value *changing the world* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Changing the world")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Changing the world")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Changing the world")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Changing the world")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Changing the world")
+
+*question: How much do you value *collaborating with others* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Collaborating with others")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Collaborating with others")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Collaborating with others")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Collaborating with others")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Collaborating with others")
+
+*question: How much do you value *competition* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Competition")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Competition")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Competition")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Competition")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Competition")
+
+*question: How much do you value *creating new things* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Creating new things")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Creating new things")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Creating new things")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Creating new things")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Creating new things")
+
+*question: How much do you value *creativity* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Creativity")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Creativity")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Creativity")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Creativity")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Creativity")
+
+*question: How much do you value *diversity* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Diversity")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Diversity")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Diversity")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Diversity")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Diversity")
+
+*question: How much do you value *employee benefits* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Employee benefits")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Employee benefits")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Employee benefits")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Employee benefits")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Employee benefits")
+
+*question: How much do you value *exposure to beauty* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Exposure to beauty")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Exposure to beauty")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Exposure to beauty")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Exposure to beauty")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Exposure to beauty")
+
+*question: How much do you value *fast pace* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Fast pace")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Fast pace")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Fast pace")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Fast pace")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Fast pace")
+
+*question: How much do you value *fun* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Fun")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Fun")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Fun")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Fun")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Fun")
+
+*question: How much do you value *helping others* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Helping others")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Helping others")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Helping others")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Helping others")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Helping others")
+
+*question: How much do you value *high income* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("High income")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("High income")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("High income")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("High income")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("High income")
+
+*question: How much do you value *high level of interaction with people* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("High level of interaction with people")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("High level of interaction with people")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("High level of interaction with people")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("High level of interaction with people")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("High level of interaction with people")
+
+*question: How much do you value *income-based on productivity* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Income-based on productivity")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Income-based on productivity")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Income-based on productivity")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Income-based on productivity")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Income-based on productivity")
+
+*question: How much do you value *influencing others* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Influencing others")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Influencing others")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Influencing others")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Influencing others")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Influencing others")
+
+*question: How much do you value *intellectually demanding work* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Intellectually demanding work")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Intellectually demanding work")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Intellectually demanding work")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Intellectually demanding work")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Intellectually demanding work")
+
+*question: How much do you value *job security* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Job security")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Job security")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Job security")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Job security")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Job security")
+
+*question: How much do you value *location* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Location")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Location")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Location")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Location")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Location")
+
+*question: How much do you value *moral / spiritual fulfillment* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Moral / spiritual fulfillment")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Moral / spiritual fulfillment")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Moral / spiritual fulfillment")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Moral / spiritual fulfillment")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Moral / spiritual fulfillment")
+
+*question: How much do you value *opportunity for advancement* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Opportunity for advancement")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Opportunity for advancement")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Opportunity for advancement")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Opportunity for advancement")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Opportunity for advancement")
+
+*question: How much do you value *opportunity to lead* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Opportunity to lead")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Opportunity to lead")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Opportunity to lead")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Opportunity to lead")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Opportunity to lead")
+
+*question: How much do you value *opportunity to learn new things* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Opportunity to learn new things")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Opportunity to learn new things")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Opportunity to learn new things")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Opportunity to learn new things")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Opportunity to learn new things")
+
+*question: How much do you value *outlet for creativity* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Outlet for creativity")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Outlet for creativity")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Outlet for creativity")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Outlet for creativity")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Outlet for creativity")
+
+*question: How much do you value *physical activity* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Physical activity")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Physical activity")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Physical activity")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Physical activity")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Physical activity")
+
+*question: How much do you value *pleasant work environment* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Pleasant work environment")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Pleasant work environment")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Pleasant work environment")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Pleasant work environment")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Pleasant work environment")
+
+*question: How much do you value *power* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Power")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Power")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Power")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Power")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Power")
+
+*question: How much do you value *prestige* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Prestige")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Prestige")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Prestige")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Prestige")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Prestige")
+
+*question: How much do you value *recognition* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Recognition")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Recognition")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Recognition")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Recognition")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Recognition")
+
+*question: How much do you value *risk-taking* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Risk-taking")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Risk-taking")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Risk-taking")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Risk-taking")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Risk-taking")
+
+*question: How much do you value *routine work* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Routine work")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Routine work")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Routine work")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Routine work")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Routine work")
+
+*question: How much do you value *seeing tangible results from work completed* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Seeing tangible results from work completed")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Seeing tangible results from work completed")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Seeing tangible results from work completed")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Seeing tangible results from work completed")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Seeing tangible results from work completed")
+
+*question: How much do you value *sharing ideas or information* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Sharing ideas or information")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Sharing ideas or information")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Sharing ideas or information")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Sharing ideas or information")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Sharing ideas or information")
+
+*question: How much do you value *socialization* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Socialization")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Socialization")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Socialization")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Socialization")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Socialization")
+
+*question: How much do you value *solving problems* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Solving problems")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Solving problems")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Solving problems")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Solving problems")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Solving problems")
+
+*question: How much do you value *status as an expert* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Status as an expert")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Status as an expert")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Status as an expert")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Status as an expert")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Status as an expert")
+
+*question: How much do you value *structure* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Structure")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Structure")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Structure")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Structure")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Structure")
+
+*question: How much do you value *supportive management* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Supportive management")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Supportive management")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Supportive management")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Supportive management")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Supportive management")
+
+*question: How much do you value *team membership* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Team membership")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Team membership")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Team membership")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Team membership")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Team membership")
+
+*question: How much do you value *time freedom* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Time freedom")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Time freedom")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Time freedom")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Time freedom")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Time freedom")
+
+*question: How much do you value *travel* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Travel")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Travel")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Travel")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Travel")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Travel")
+
+*question: How much do you value *variety of tasks* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Variety of tasks")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Variety of tasks")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Variety of tasks")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Variety of tasks")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Variety of tasks")
+
+*question: How much do you value *work / life balance* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Work / life balance")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Work / life balance")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Work / life balance")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Work / life balance")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Work / life balance")
+
+*question: How much do you value *working alone* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Working alone")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Working alone")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Working alone")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Working alone")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Working alone")
+
+*question: How much do you value *working outside* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("Working outside")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("Working outside")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("Working outside")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("Working outside")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("Working outside")
+
+
+*html
+	<style>
+		li {
+			margin-left: 3em;
+		}
+	</style>
+
+*header: Results
+
+These are the things you said you *definitely want*:
+
+>> i = 1
+*while: i <= definitelyShouldHave.size
+	*html
+		<li>{definitelyShouldHave[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+These are the things you said you *probably want*:
+
+>> i = 1
+*while: i <= probablyShouldHave.size
+	*html
+		<li>{probablyShouldHave[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+These are the things you said *don't matter to you either way*:
+
+>> i = 1
+*while: i <= doesntMatter.size
+	*html
+		<li>{doesntMatter[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+These are the things you said you *probably don't want*:
+
+>> i = 1
+*while: i <= probablyShouldNotHave.size
+	*html
+		<li>{probablyShouldNotHave[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+These are the things you said you *definitely don't want*:
+
+>> i = 1
+*while: i <= definitelyShouldNotHave.size
+	*html
+		<li>{definitelyShouldNotHave[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+*button: Start over!
+*goto: startLabel

@@ -1,0 +1,83 @@
+*label: startLabel
+
+>> definitelyShouldHave = []
+>> probablyShouldHave = []
+>> doesntMatter = []
+>> probablyShouldNotHave = []
+>> definitelyShouldNotHave = []
+
+{% for value in values %}
+*question: How much do you value *{{ value | downcase }}* in a job?
+	I definitely want to have this in a job.
+		>> definitelyShouldHave.add("{{ value }}")
+	I think I'd probably like to have this in a job.
+		>> probablyShouldHave.add("{{ value }}")
+	It doesn't matter to me either way.
+		>> doesntMatter.add("{{ value }}")
+	I think I probably don't want to have this in a job.
+		>> probablyShouldNotHave.add("{{ value }}")
+	I definitely don't want to have this in a job.
+		>> definitelyShouldNotHave.add("{{ value }}")
+{% endfor %}
+
+*html
+	<style>
+		li {
+			margin-left: 3em;
+		}
+	</style>
+
+*header: Results
+
+These are the things you said you *definitely want*:
+
+>> i = 1
+*while: i <= definitelyShouldHave.size
+	*html
+		<li>{definitelyShouldHave[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+These are the things you said you *probably want*:
+
+>> i = 1
+*while: i <= probablyShouldHave.size
+	*html
+		<li>{probablyShouldHave[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+These are the things you said *don't matter to you either way*:
+
+>> i = 1
+*while: i <= doesntMatter.size
+	*html
+		<li>{doesntMatter[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+These are the things you said you *probably don't want*:
+
+>> i = 1
+*while: i <= probablyShouldNotHave.size
+	*html
+		<li>{probablyShouldNotHave[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+These are the things you said you *definitely don't want*:
+
+>> i = 1
+*while: i <= definitelyShouldNotHave.size
+	*html
+		<li>{definitelyShouldNotHave[i]}</li>
+	>> i = i + 1
+*html
+	<br><br>
+
+*button: Start over!
+*goto: startLabel
