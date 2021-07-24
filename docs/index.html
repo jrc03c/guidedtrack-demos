@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      :root {
+        --padding: 1em;
+      }
+
+      html {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      body {
+        margin: 3em;
+        padding: 0;
+        border: 0;
+        font-size: 1em;
+        font-family: "Arial", sans-serif, monospace;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: var(--padding) 0;
+      }
+
+      p,
+      ul,
+      ol {
+        margin: 0 0 var(--padding) 0;
+        line-height: 1.5em;
+      }
+
+      a {
+        color: rgb(0, 100, 200);
+        text-decoration: none;
+      }
+
+      hr {
+        margin: 1em 0;
+        padding: 2px;
+        border: 0px solid black;
+        background-color: black;
+      }
+
+      code {
+        padding: 0.25em 0.5em;
+        background-color: rgb(235, 235, 235);
+        border-radius: 4px;
+        font-size: 1.1em;
+      }
+
+      blockquote {
+        padding: var(--padding);
+        background-color: rgb(235, 235, 235);
+        border-left: 4px solid rgb(128, 128, 128);
+      }
+
+      pre {
+        margin: 0 0 calc(1.1 * var(--padding)) 0;
+      }
+
+      pre code {
+        padding: var(--padding) !important;
+        background-color: #1c1d21 !important;
+      }
+
+      .indented {
+        margin: 0 calc(2 * var(--padding)) var(--padding)
+          calc(2 * var(--padding));
+      }
+    </style>
+  </head>
+  <body>
+    <div id="rendered"></div>
+
+    <script src="./markdown-it.min.js"></script>
+    <script>
+      window.onload = async function () {
+        String.prototype.copy = function () {
+          return this.substring(0, this.length)
+        }
+
+        String.prototype.replaceAll = function (a, b) {
+          let out = this.copy()
+          while (out.includes(a)) out = out.replace(a, b)
+          return out
+        }
+
+        let element = document.getElementById("rendered")
+        let md = markdownit({ html: true })
+
+        let response = await fetch("gt.md")
+        let content = await response.text()
+        let pattern = /\$.*?\$/g
+        let matches = content.match(pattern)
+
+        if (matches && matches.length > 0) {
+          matches.forEach(function (match) {
+            content = content.replaceAll(match, "+++++")
+          })
+        }
+
+        content = md.render(content.trim())
+
+        if (matches && matches.length > 0) {
+          matches.forEach(function (match) {
+            let temp = match.replaceAll("$", "")
+            content = content.replace("+++++", temp)
+          })
+        }
+
+        document.getElementById("rendered").innerHTML = content
+      }
+    </script>
+  </body>
+</html>
