@@ -5,6 +5,8 @@
 
   body {
     color: rgb(74, 74, 74);
+    max-width: calc(768px - 3em);
+    margin: 3em auto;
   }
 
   h1, h2, h3, h4, h5, h6, p {
@@ -25,9 +27,16 @@
     color: red;
     font-weight: bold;
   }
+
+  @media (max-width: 768px) {
+    body {
+      max-width: calc(100% - 3em);
+      margin: 3em 1.5em;
+    }
+  }
 </style>
 
-# GT Docs
+# GuidedTrack Docs
 
 <hr>
 
