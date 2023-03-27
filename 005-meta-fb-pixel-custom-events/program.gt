@@ -1,0 +1,25 @@
+-- https://guidedtrack-demos.vercel.app/005-meta-fb-pixel-custom-events/
+
+*label: Start
+
+*question: Email address:
+	*save: email
+
+*question: Which event would you like to trigger?
+	*save: whichEvent
+	Alpha
+		*trigger: alpha
+			*send: { "email" -> email }
+	Bravo
+		*trigger: bravo
+			*send: { "email" -> email }
+			
+>> whichEventLower = whichEvent.lowercase
+
+Congratulations! You triggered the "{whichEvent}" event. It should show up as "josh-demo-{whichEventLower}" in Pixel's analytics reports.
+
+Click [here|https://www.guidedtrack.com/programs/22212/edit] to view this program's GuidedTrack source code or [here|https://github.com/jrc03c/guidedtrack-demos/blob/main/005-meta-fb-pixel-custom-events/index.html] to view this program's HTML source code.
+
+*button: Start over
+
+*goto: Start
