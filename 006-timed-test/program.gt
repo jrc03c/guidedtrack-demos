@@ -1,0 +1,51 @@
+-- https://www.facebook.com/groups/guidedtrack/posts/1354507038440534/
+-- NOTE: The @jrc03c/random program used below just generates random numbers. It's not related to the test timer.
+
+*events
+	timer-stopped
+		*goto: testEndLabel
+			*reset
+
+*header: Welcome!
+
+This test will last for 30 seconds. Please answer as many questions as you can in that time. Are you ready to start?
+
+*button: Yes, I'm ready!
+
+*trigger: start-timer
+	*send: { "ms" -> 30000 }
+	
+>> correct = 0
+>> total = 0
+
+*while: 0 < 1
+	*program: @jrc03c/random
+	>> a = r * 899 + 100
+	>> a = a.round
+	
+	*program: @jrc03c/random
+	>> b = r * 899 + 100
+	>> b = b.round
+	
+	*question: {a} × {b} = _____
+		*type: number
+		*save: answer
+		
+	*if: answer + 0 = a * b
+		>> correct = correct + 1
+		
+	>> total = total + 1
+	
+*label: testEndLabel
+
+*header: Time's up!
+
+*if: total = 0
+	You didn't answer any questions, so your score is 0%!
+	
+*if: total > 0
+	>> percent = 100 * correct / total
+	
+	You answered {total} questions, of which {correct} were correct; so your score for the test is {percent}%!
+	
+*button: Okay
