@@ -15,5 +15,15 @@ module.exports = function (request, response) {
     seed(s)
   }
 
-  return response.status(200).json(random())
+  const n = parseInt(request.query.n)
+
+  if (isNaN(n)) {
+    return response
+      .status(400)
+      .send(
+        "ERROR: Malformed request. The '/get-random-number' endpoint takes a query string parameter called 'n' that must have a numerical value. For example: https://guidedtrack-demos.vercel.app/api/get-random-number/?n=5"
+      )
+  }
+
+  return response.status(200).json(random(n))
 }
