@@ -35,7 +35,6 @@
     </div>
 
     <!-- Facebook Pixel Code -->
-    <!-- prettier-ignore -->
     <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -60,10 +59,12 @@
     <script>
       $(window).on("alpha", (event, data) => {
         fbq("trackCustom", "josh-demo-alpha", data)
+        alert("Congratulations! You trigged the Alpha event!")
       })
 
       $(window).on("bravo", (event, data) => {
         fbq("trackCustom", "josh-demo-alpha", data)
+        alert("Congratulations! You trigged the Bravo event!")
       })
     </script>
   </body>

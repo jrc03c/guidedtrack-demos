@@ -19,5 +19,8 @@
   "homepage": "https://github.com/jrc03c/guidedtrack-demos#readme",
   "dependencies": {
     "katex": "^0.12.0"
+  },
+  "devDependencies": {
+    "vercel": "^29.1.1"
   }
 }
